@@ -1,0 +1,15 @@
+{
+  "name": "shri-2020-1",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IlyaChudin/shri-2020-1.git"
+  },
+  "author": "Ilya Chudin",
+  "license": "ISC"
+}
