@@ -1,0 +1,12 @@
+.section {
+  @each $indent in (xxl, xxxxl) {
+    &_indent-b_#{$indent} {
+      margin-bottom: var(--indent-#{$indent});
+    }
+
+    &_space-v_#{$indent} {
+      padding-top: var(--indent-#{$indent});
+      padding-bottom: var(--indent-#{$indent});
+    }
+  }
+}

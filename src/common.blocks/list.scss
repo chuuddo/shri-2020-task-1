@@ -1,0 +1,57 @@
+.list {
+  &_border_all {
+    border: 3px solid var(--border-color);
+  }
+
+  &_view_default {
+    background: var(--main-color);
+  }
+
+  &__item {
+    &_border {
+      &_bottom {
+        border-bottom: 3px solid var(--border-color);
+
+        &:last-child {
+          border-bottom: none;
+        }
+      }
+
+      &_top {
+        border-top: 3px solid var(--border-color);
+      }
+    }
+
+    &_distribute {
+      &_between {
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+
+    &_vertical-align {
+      &_center {
+        display: flex;
+        align-items: center;
+      }
+    }
+
+    &_indent-t_m {
+      margin-top: var(--indent-m);
+    }
+
+    @each $indent in (s, m, l, xl) {
+      &_indent-b_#{$indent} {
+        margin-bottom: var(--indent-#{$indent});
+      }
+    }
+
+    &_space-b_s {
+      padding-bottom: var(--indent-s);
+    }
+
+    &_space-a_m {
+      padding: var(--indent-m);
+    }
+  }
+}

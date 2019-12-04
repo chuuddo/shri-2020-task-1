@@ -1,0 +1,49 @@
+.form {
+  &_border_all {
+    border: 3px solid var(--border-color);
+  }
+
+  &_view_default {
+    background: var(--main-color);
+  }
+
+  &__item {
+    &_border_bottom {
+      border-bottom: 3px solid var(--border-color);
+
+      &:last-child {
+        border-bottom: none;
+      }
+    }
+
+    &_distribute_between {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &_vertical-align_center {
+      display: flex;
+      align-items: center;
+    }
+
+    @each $indent in (xxxs, xxs, s, m, l, xl, xxl, xxxl, xxxxl) {
+      &_indent-b_#{$indent} {
+        margin-bottom: var(--indent-#{$indent});
+      }
+
+      &_space-h_#{$indent} {
+        padding-left: var(--indent-#{$indent});
+        padding-right: var(--indent-#{$indent});
+      }
+
+      &_space-v_#{$indent} {
+        padding-top: var(--indent-#{$indent});
+        padding-bottom: var(--indent-#{$indent});
+      }
+    }
+  }
+
+  &__label_width_default {
+    width: 35%;
+  }
+}

@@ -1,0 +1,31 @@
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+@import "./common.blocks/avatar.scss";
+@import "./common.blocks/brand-logo.scss";
+@import "./common.blocks/button.scss";
+@import "./common.blocks/card.scss";
+@import "./common.blocks/form.scss";
+@import "./common.blocks/grid.scss";
+@import "./common.blocks/icon-plus.scss";
+@import "./common.blocks/image.scss";
+@import "./common.blocks/informer.scss";
+@import "./common.blocks/input.scss";
+@import "./common.blocks/layout.scss";
+@import "./common.blocks/list.scss";
+@import "./common.blocks/placeholder.scss";
+@import "./common.blocks/section.scss";
+@import "./common.blocks/text.scss";
+@import "./common.blocks/theme.scss";

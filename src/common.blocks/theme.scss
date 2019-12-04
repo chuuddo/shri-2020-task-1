@@ -1,0 +1,74 @@
+.theme {
+  &_color {
+    &_project-default {
+      --main-color: #ffffff;
+      --accent-color: #ffcc00;
+      --border-color: #000000;
+      --text-color-primary: #000000;
+      --text-color-secondary: rgba(0, 0, 0, 0.6);
+      --text-color-ghost: rgba(0, 0, 0, 0.3);
+      --text-color-link: #0077Ff;
+    }
+
+    &_project-brand {
+      --main-color: #0077ff;
+      --accent-color: #ffffff;
+      --border-color: #ffffff;
+      --text-color-primary: #ffffff;
+      --text-color-secondary: rgba(255, 255, 255, 0.6);
+      --text-color-ghost: rgba(255, 255, 255, 0.3);
+      --text-color-link: #ffffff;
+    }
+
+    &_project-inverse {
+      --main-color: #000000;
+      --accent-color: #ffffff;
+      --border-color: #ffffff;
+      --text-color-primary: #ffffff;
+      --text-color-secondary: rgba(255, 255, 255, 0.6);
+      --text-color-ghost: rgba(255, 255, 255, 0.3);
+      --text-color-link: #0077ff;
+    }
+
+    &_project-warning {
+      --main-color: #ff3333;
+      --accent-color: #ffffff;
+      --border-color: #ff3333;
+      --text-color-primary: #ffffff;
+      --text-color-secondary: rgba(255, 255, 255, 0.6);
+      --text-color-ghost: rgba(255, 255, 255, 0.3);
+      --text-color-link: #ffffff;
+    }
+  }
+
+  &_size_default {
+    --font-size-s: 8px;
+    --font-size-m: 10px;
+    --font-size-l: 11px;
+    --font-size-xl: 13px;
+    --font-size-xxl: 16px;
+    --line-height-s: 21px;
+    --line-height-m: 25px;
+    --line-height-l: 28px;
+    --line-height-xl: 34px;
+    --line-height-xxl: 38px;
+  }
+
+  &_space_default {
+    --indent-xxxs: 3px;
+    --indent-xxs: 6px;
+    --indent-xs: 9px;
+    --indent-s: 15px;
+    --indent-m: 18px;
+    --indent-l: 24px;
+    --indent-xl: 27px;
+    --indent-xxl: 36px;
+    --indent-xxxl: 45px;
+    --indent-xxxxl: 51px;
+    --indent-xxxxxl: 72px;
+  }
+
+  &_gap_small {
+    --gap: var(--indent-xl);
+  }
+}

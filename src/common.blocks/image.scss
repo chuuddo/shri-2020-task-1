@@ -1,0 +1,17 @@
+.image {
+  border: 3px solid var(--border-color);
+  width: 100%;
+  height: 100%;
+  background-color: var(--main-color);
+  background-repeat: no-repeat;
+  background-position: center;
+
+  .theme_color_project-default & {
+    background-image: url("./images/image-placeholder-primary.svg");
+  }
+
+  .theme_color_project-inverse &,
+  .theme_color_project-brand & {
+    background-image: url("./images/image-placeholder-inverse.svg");
+  }
+}

@@ -1,0 +1,8 @@
+.input {
+  border: 3px solid var(--border-color);
+  @each $size, $height in ("s": 24px, "m": 32px, "l": 42px, "xl": 56px, "xxl": 64px) {
+    &_size_#{$size} {
+      height: $height;
+    }
+  }
+}
