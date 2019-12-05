@@ -1,0 +1,18 @@
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.3;
+  width: 100%;
+  pointer-events: none;
+
+  &__index {
+    background: no-repeat url("./index.png");
+    height: 1403px;
+  }
+
+  &__product {
+    background: no-repeat url("./product.png");
+    height: 1254px;
+  }
+}
