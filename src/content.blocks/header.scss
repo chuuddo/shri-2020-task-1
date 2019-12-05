@@ -1,0 +1,16 @@
+.header {
+  &__content {
+    max-width: 1280px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: var(--indent-xxxl) 0; // TODO разобраться с горизонтальным отступом. var(--gap) ломает верстку.
+  }
+
+  &__logo {
+    width: 179px;
+    height: 34px;
+    background: var(--text-color-primary);
+  }
+}
