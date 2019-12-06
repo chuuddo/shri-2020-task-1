@@ -1,0 +1,28 @@
+.event {
+  min-height: 400px;
+
+  &__content {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  &__footer {
+    padding-top: 0;
+  }
+
+  &__preview {
+    display: flex;
+  }
+
+  &__speaker {
+    margin-right: var(--indent-xs);
+  }
+
+  &__title {
+    margin-top: var(--indent-xxl);
+  }
+
+  &__description {
+    margin-top: var(--indent-s);
+  }
+}
