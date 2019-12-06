@@ -1,12 +1,12 @@
 const path = require("path");
-const {CleanWebpackPlugin} = require("clean-webpack-plugin");
+const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const merge = require("webpack-merge");
 
 module.exports = (env, argv) => {
   const isDev = argv.mode === "development";
-  let baseConfig = {
+  const baseConfig = {
     entry: {
       style: "./src/main.js"
     },
@@ -23,7 +23,7 @@ module.exports = (env, argv) => {
               loader: MiniCssExtractPlugin.loader,
               options: {
                 hmr: isDev
-              },
+              }
             },
             "css-loader",
             "sass-loader"
@@ -45,7 +45,7 @@ module.exports = (env, argv) => {
       })
     ]
   };
-  let devConfig = {
+  const devConfig = {
     devtool: "inline-source-map",
     entry: {
       index: "./src/pages/index.js",

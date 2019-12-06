@@ -1,3 +1,31 @@
+$line-sizes: (
+  "s": (
+    "s": 20px,
+    "m": 48px,
+    "l": 100px
+  ),
+  "m": (
+    "s": 24px,
+    "m": 56px,
+    "l": 114px
+  ),
+  "l": (
+    "s": 28px,
+    "m": 68px,
+    "l": 138px
+  ),
+  "xl": (
+    "s": 32px,
+    "m": 74px,
+    "l": 154px
+  ),
+  "xxl": (
+    "s": 36px,
+    "m": 88px,
+    "l": 184px
+  )
+);
+
 .text {
   &__word {
     display: inline-block;
@@ -31,12 +59,7 @@
     }
   }
 
-  @each $height, $widths in
-    ("s": ("s": 20px, "m": 48px, "l": 100px),
-    "m": ("s": 24px, "m": 56px, "l": 114px),
-    "l": ("s": 28px, "m": 68px, "l": 138px),
-    "xl": ("s": 32px, "m": 74px, "l": 154px),
-    "xxl": ("s": 36px, "m": 88px, "l": 184px)) {
+  @each $height, $widths in $line-sizes {
     &_size_#{$height} {
       line-height: var(--line-height-#{$height});
 

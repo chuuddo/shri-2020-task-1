@@ -1,4 +1,5 @@
-const templater = require("../templater");
+const templater = require("../../lib/templater");
 const json = require("./index.json");
-let content = templater(json);
+
+const content = templater(json);
 document.body.insertAdjacentHTML("afterbegin", content);

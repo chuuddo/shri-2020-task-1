@@ -1,43 +1,43 @@
 .theme {
   &_color {
     &_project-default {
-      --main-color: #ffffff;
-      --accent-color: #ffcc00;
+      --main-color: #FFFFFF;
+      --accent-color: #FFCC00;
       --border-color: #000000;
       --text-color-primary: #000000;
       --text-color-secondary: rgba(0, 0, 0, 0.6);
       --text-color-ghost: rgba(0, 0, 0, 0.3);
-      --text-color-link: #0077Ff;
+      --text-color-link: #0077FF;
     }
 
     &_project-brand {
-      --main-color: #0077ff;
-      --accent-color: #ffffff;
-      --border-color: #ffffff;
-      --text-color-primary: #ffffff;
+      --main-color: #0077FF;
+      --accent-color: #FFFFFF;
+      --border-color: #FFFFFF;
+      --text-color-primary: #FFFFFF;
       --text-color-secondary: rgba(255, 255, 255, 0.6);
       --text-color-ghost: rgba(255, 255, 255, 0.3);
-      --text-color-link: #ffffff;
+      --text-color-link: #FFFFFF;
     }
 
     &_project-inverse {
       --main-color: #000000;
-      --accent-color: #ffffff;
-      --border-color: #ffffff;
-      --text-color-primary: #ffffff;
+      --accent-color: #FFFFFF;
+      --border-color: #FFFFFF;
+      --text-color-primary: #FFFFFF;
       --text-color-secondary: rgba(255, 255, 255, 0.6);
       --text-color-ghost: rgba(255, 255, 255, 0.3);
-      --text-color-link: #0077ff;
+      --text-color-link: #0077FF;
     }
 
     &_project-warning {
-      --main-color: #ff3333;
-      --accent-color: #ffffff;
-      --border-color: #ff3333;
-      --text-color-primary: #ffffff;
+      --main-color: #FF3333;
+      --accent-color: #FFFFFF;
+      --border-color: #FF3333;
+      --text-color-primary: #FFFFFF;
       --text-color-secondary: rgba(255, 255, 255, 0.6);
       --text-color-ghost: rgba(255, 255, 255, 0.3);
-      --text-color-link: #ffffff;
+      --text-color-link: #FFFFFF;
     }
   }
 
