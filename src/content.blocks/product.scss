@@ -1,0 +1,17 @@
+.product {
+  min-height: 300px;
+
+  &__image {
+    width: 100%;
+    height: 160px;
+  }
+
+  &__title {
+    margin-bottom: var(--indent-xxxl);
+  }
+
+  & .image {
+    // FIXME Без этого не попадает в макет, возможно ошибка в описании блока .image или в макетах.
+    border: 3px solid var(--main-color);
+  }
+}
