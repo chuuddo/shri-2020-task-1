@@ -3,16 +3,25 @@
   top: 0;
   left: 0;
   opacity: 0.3;
-  width: 100%;
   pointer-events: none;
 
   &__index {
     background: no-repeat url("./index.png");
+    width: 1838px;
     height: 1403px;
   }
 
   &__product {
     background: no-repeat url("./product.png");
+    width: 1838px;
     height: 1254px;
+  }
+
+  &__history2 {
+    top: 885px;
+    left: 279px;
+    background: no-repeat url("./history2.png");
+    width: 626px;
+    height: 519px;
   }
 }
