@@ -35,6 +35,10 @@
       &_xl {
         padding: var(--indent-xl);
       }
+      // TODO Этого значения нет в описания, но есть в product.json:L101 и без него нельзя собрать блок cover
+      &_xxl {
+        padding: var(--indent-xxl);
+      }
 
       &_xxxl {
         padding: var(--indent-xxxl);
