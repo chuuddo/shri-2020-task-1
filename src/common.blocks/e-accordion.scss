@@ -1,0 +1,13 @@
+.e-accordion {
+  &__short {
+    cursor: pointer;
+  }
+
+  &__more {
+    display: none;
+
+    &_view_default {
+      display: block;
+    }
+  }
+}
