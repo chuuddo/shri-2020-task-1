@@ -1,0 +1,9 @@
+.footer {
+  &__content {
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: var(--indent-xxxl) 0; // TODO разобраться с горизонтальным отступом. var(--gap) ломает верстку.
+  }
+}
