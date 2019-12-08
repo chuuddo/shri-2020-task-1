@@ -1,5 +1,7 @@
 .layout {
   &__container {
+    background-color: var(--main-color);
+
     &_align_center {
       margin: 0 auto;
     }
