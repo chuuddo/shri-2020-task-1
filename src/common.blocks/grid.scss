@@ -1,39 +1,43 @@
 .grid {
   display: grid;
 
-  &_m-columns_12 {
-    grid-template-columns: repeat(12, 1fr);
-  }
-
-  &_m-columns_10 {
-    grid-template-columns: repeat(10, 1fr);
-  }
-
-  &_col-gap_two-third {
-    column-gap: calc(var(--gap) * 2 / 3);
-  }
-
-  &_col-gap_full {
-    column-gap: var(--gap);
-  }
-
-  &_col-gap_half {
-    column-gap: calc(var(--gap) / 2);
-  }
-
-  &_row-gap_full {
-    row-gap: var(--gap);
-  }
-
-  &_row-gap_half {
-    row-gap: calc(var(--gap) / 2);
-  }
-
-  &__fraction {
-    @each $val in (2, 3, 4, 5, 8) {
-      &_m-col_#{$val} {
-        grid-column: span $val;
+  @media (min-width: $breakpoint-desktop) {
+    @each $val in (10, 12) {
+      &_m-columns_#{$val} {
+        grid-template-columns: repeat($val, 1fr);
       }
+    }
+
+    &__fraction {
+      @each $val in (2, 3, 4, 5, 8) {
+        &_m-col_#{$val} {
+          grid-column: span $val;
+        }
+      }
+    }
+  }
+
+  &_col-gap {
+    &_two-third {
+      column-gap: calc(var(--gap) * 2 / 3);
+    }
+
+    &_full {
+      column-gap: var(--gap);
+    }
+
+    &_half {
+      column-gap: calc(var(--gap) / 2);
+    }
+  }
+
+  &_row-gap {
+    &_full {
+      row-gap: var(--gap);
+    }
+
+    &_half {
+      row-gap: calc(var(--gap) / 2);
     }
   }
 }

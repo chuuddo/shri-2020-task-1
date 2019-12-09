@@ -13,6 +13,7 @@ body {
   box-sizing: inherit;
 }
 
+@import "./common.blocks/theme.scss";
 @import "./common.blocks/avatar.scss";
 @import "./common.blocks/brand-logo.scss";
 @import "./common.blocks/button.scss";
@@ -28,7 +29,6 @@ body {
 @import "./common.blocks/placeholder.scss";
 @import "./common.blocks/section.scss";
 @import "./common.blocks/text.scss";
-@import "./common.blocks/theme.scss";
 @import "./content.blocks/header.scss";
 @import "./content.blocks/onoffswitch.scss";
 @import "./content.blocks/warning.scss";

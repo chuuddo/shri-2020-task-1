@@ -1,3 +1,5 @@
+$breakpoint-desktop: 1024px;
+
 .theme {
   background-color: var(--main-color);
 
@@ -71,6 +73,10 @@
   }
 
   &_gap_small {
-    --gap: var(--indent-xl);
+    --gap: var(--indent-s);
+
+    @media (min-width: $breakpoint-desktop) {
+      --gap: var(--indent-xl);
+    }
   }
 }
