@@ -2,16 +2,14 @@
   border: 3px solid var(--border-color);
   width: 100%;
   height: 100%;
-  background-color: var(--main-color);
-  background-repeat: no-repeat;
-  background-position: center;
+  background: no-repeat center var(--image-placeholder) var(--main-color);
+}
 
-  .theme_color_project-default & {
-    background-image: url("./images/image-placeholder-primary.svg");
-  }
+.theme_color_project-default {
+  --image-placeholder: url("./images/image-placeholder-primary.svg");
+}
 
-  .theme_color_project-inverse &,
-  .theme_color_project-brand & {
-    background-image: url("./images/image-placeholder-inverse.svg");
-  }
+.theme_color_project-inverse,
+.theme_color_project-brand {
+  --image-placeholder: url("./images/image-placeholder-inverse.svg");
 }
