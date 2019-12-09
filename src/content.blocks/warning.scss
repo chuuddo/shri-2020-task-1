@@ -1,5 +1,9 @@
 .warning {
   min-height: 335px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
 
   & .placeholder {
     margin-bottom: var(--indent-m);
@@ -9,9 +13,5 @@
   &__content {
     flex-direction: column;
     align-items: center;
-  }
-
-  &__button-wrapper {
-    margin-top: 5px;
   }
 }
